@@ -20,6 +20,7 @@
 <ng-template #noServer>
   <p>No Server was created</p>
 </ng-template>
-<app-server></app-server>
-<app-server></app-server>
+<!-- create a loop for the List of servers in ts-->
+<app-server *ngFor="let server of servers"></app-server>
+
 

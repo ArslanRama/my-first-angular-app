@@ -23,7 +23,7 @@ export class UserComponent implements OnInit {
     this.userStatus = 'New User Added, User name is ' + this.userName;
   }
 
-  updateUserName(event: Event) {
-    this.userName = (<HTMLInputElement>event.target).value;
-  }
+  // updateUserName(event: Event) {
+  //   this.userName = (<HTMLInputElement>event.target).value;
+  // }
 }

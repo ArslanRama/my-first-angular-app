@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class UserComponent implements OnInit {
   newUser = false;
   userStatus = "No user added";
-  userName = "Shanks";
+  userName = "";
 
   ngOnInit(): void {
   }

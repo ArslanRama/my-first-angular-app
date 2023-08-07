@@ -1,14 +1,20 @@
-<h1>User Component</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sx-12">
+      <label>User Component</label>
 
-<input
-  type="text"
-  class="form-control"
-  [(ngModel)]="userName">
+      <input
+        type="text"
+        class="form-control"
 
-<button
-  class="btn btn-danger"
-  [disabled]="!userName"
-  (click)="createUser ()">Add User</button>
+        [(ngModel)]="userName"> <!--two way binding syntax-->
 
-<p>{{userStatus}}</p>
+      <button
+        class="btn btn-danger"
+        [disabled]="userName==='' "
+        (click)="createUser ()">Reset User</button>
 
+      <p>{{userStatus}}</p>
+    </div>
+  </div>
+</div>

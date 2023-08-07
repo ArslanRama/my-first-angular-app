@@ -1,0 +1,8 @@
+
+<button class="btn" (click)="toggleDetails()">Display Details</button>
+<p *ngIf="showDetails">{{ secret }}</p>
+<div *ngFor="let log of buttonClicks; let i = index"
+     [ngStyle]="i >= 4 ? {'background-color': 'blue'} : {}"
+     [ngClass]="i >= 4 ? 'blue-text' : ''">
+  {{ log }}
+</div>

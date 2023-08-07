@@ -9,6 +9,7 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { UserComponent } from './user/user.component';
+import { DetailsToggleComponent } from './details-toggle/details-toggle.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { UserComponent } from './user/user.component';
     WarningAlertComponent,
     SuccessAlertComponent,
     UserComponent,
+    DetailsToggleComponent,
   ],
   imports: [
     BrowserModule,
